@@ -4,7 +4,7 @@
              xmlns:local="clr-namespace:Touchyie"
              x:Class="Touchyie.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
+	<Label Text="Welcome to Touchyie!" 
            VerticalOptions="Center" 
            HorizontalOptions="Center" />
 
