@@ -3,9 +3,75 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Touchyie"
              x:Class="Touchyie.MainPage">
+    
+    <StackLayout Margin="80,80,80,80">
+        <StackLayout Orientation="Horizontal" Spacing="30">
+            <Image 
+                x:Name="profiel_foto"
+                Source="profiel_foto.jpg"
+                WidthRequest="120"/>
 
-	<Label Text="Welcome to Touchyie!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+            <Button
+                Text="Touchyie"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="Start"
+                />
+            
+            <BoxView
+                WidthRequest="120"
+                />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HeightRequest="200">
+            <Image          
+                Aspect="AspectFit"
+                Scale="1"
+                x:Name="TvButton"
+                Source="tv_icon"
+                HorizontalOptions="Start"
+                WidthRequest="200"
+                />
+            <Image          
+                Aspect="AspectFit"
+                Scale="1"
+                x:Name="TvButton4"
+                Source="netflix_logo.jpg"
+                HorizontalOptions="Center"
+                WidthRequest="200"
+                />
+            <Image          
+                Aspect="AspectFit"
+                Scale="1"
+                x:Name="TvButton5"
+                Source="youtube_logo.jpg"
+                HorizontalOptions="End"
+                WidthRequest="200"
+                />
+        </StackLayout>
+        
+       
+        <RelativeLayout>
+            <Button 
+
+                RelativeLayout.XConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Width,
+                                            Factor=0.9,
+                                            Constant=-35}"
+                RelativeLayout.YConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Height,
+                                            Factor=0,
+                                            Constant=30}" 
+                x:Name="HelpButton"
+                Text="?"
+                FontSize="40" 
+                TextColor="Black"
+                WidthRequest="60"
+                
+                
+                />
+        </RelativeLayout>
+
+    </StackLayout>
 
 </ContentPage>
