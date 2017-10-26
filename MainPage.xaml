@@ -4,8 +4,57 @@
              xmlns:local="clr-namespace:Touchyie"
              x:Class="Touchyie.MainPage">
 
-    <RelativeLayout BackgroundColor="#313335">
-        <RelativeLayout 
+    <RelativeLayout BackgroundColor="#e0f9ea">
+        <RelativeLayout  BackgroundColor="Red"
+                RelativeLayout.XConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Width,
+                                            Factor=0.0,
+                                            Constant=0}"
+                RelativeLayout.YConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Height,
+                                            Factor=0,
+                                            Constant=0}" 
+                RelativeLayout.WidthConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Width,
+                                            Factor=1,
+                                            Constant=0}" 
+                RelativeLayout.HeightConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Height,
+                                            Factor=0.1,
+                                            Constant=0}" >
+            <Image
+                x:Name="BackButton"
+                Source="ic_navigate_before.png"
+                HorizontalOptions="Start"
+                Scale="1.5"
+                RelativeLayout.XConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Width,
+                                            Factor=0,
+                                            Constant=0}"
+                RelativeLayout.YConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Height,
+                                            Factor=0,
+                                            Constant=0}" 
+                RelativeLayout.WidthConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Width,
+                                            Factor=1,
+                                            Constant=0}" 
+                RelativeLayout.HeightConstraint =
+                    "{ConstraintExpression Type=RelativeToParent,
+                                            Property=Height,
+                                            Factor=1,
+                                            Constant=0}"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
                 RelativeLayout.XConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
                                             Property=Width,
@@ -14,7 +63,7 @@
                 RelativeLayout.YConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
                                             Property=Height,
-                                            Factor=0.05,
+                                            Factor=0.1,
                                             Constant=0}" 
                 RelativeLayout.WidthConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
@@ -26,7 +75,7 @@
                                             Property=Height,
                                             Factor=0.25,
                                             Constant=0}" >
-            <Image 
+            <Image
                 x:Name="profiel_foto"
                 Source="avatar_demo.png"
                 
@@ -55,7 +104,7 @@
                 />
 
             <BoxView
-                BackgroundColor="#bfc0c1"
+                BackgroundColor="#000000"
               
                 RelativeLayout.XConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
@@ -81,7 +130,7 @@
                                             Constant=0}" 
                 />
             <BoxView 
-                BackgroundColor="#313335"
+                BackgroundColor="#acbfb3"
               
                 RelativeLayout.XConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
@@ -108,7 +157,7 @@
                 />
             <Label
                 Text="Touchyie"
-                FontSize="Medium"
+                TextColor="Black"
               
                 RelativeLayout.XConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
@@ -136,7 +185,7 @@
 
             <Label
                 Text="Username"
-                FontSize="Small"
+                
                 
                 RelativeLayout.XConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
@@ -173,7 +222,7 @@
                 RelativeLayout.YConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
                                             Property=Height,
-                                            Factor=0.3,
+                                            Factor=0.35,
                                             Constant=0}" 
                 RelativeLayout.WidthConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
@@ -279,7 +328,7 @@
                 RelativeLayout.YConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
                                             Property=Height,
-                                            Factor=0.7,
+                                            Factor=0.75,
                                             Constant=0}" 
                 RelativeLayout.WidthConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
@@ -294,7 +343,6 @@
             <Button 
                 x:Name="HelpButton"
                 Text="?"
-                FontSize="40" 
                 TextColor="Black"
                 
                 RelativeLayout.XConstraint =
