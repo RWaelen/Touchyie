@@ -10,11 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace Touchyie
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ProfilePage : ContentPage
+	public partial class Page1 : ContentPage
 	{
-		public ProfilePage ()
+		public Page1 ()
 		{
-			//InitializeComponent ();
+			InitializeComponent ();
 		}
 	}
 }
