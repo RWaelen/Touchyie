@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Touchyie.InlogPage">
     <ContentPage.Content>
-       <RelativeLayout>
+        <RelativeLayout>
             <RelativeLayout  BackgroundColor="Red"
                 RelativeLayout.XConstraint =
                     "{ConstraintExpression Type=RelativeToParent,
@@ -90,34 +90,15 @@
                         BackgroundColor="#77D065"
                         Command="{Binding LoginCommand}"
                         />
-            </StackLayout>
-            <RelativeLayout                
-                BackgroundColor="Blue"
-                RelativeLayout.XConstraint =
-                    "{ConstraintExpression Type=RelativeToParent,
-                                            Property=Width,
-                                            Factor=0.0,
-                                            Constant=0}"
-                RelativeLayout.YConstraint =
-                    "{ConstraintExpression Type=RelativeToParent,
-                                            Property=Height,
-                                            Factor=0.6,
-                                            Constant=0}" 
-                RelativeLayout.WidthConstraint =
-                    "{ConstraintExpression Type=RelativeToParent,
-                                            Property=Width,
-                                            Factor=1,
-                                            Constant=0}" 
-                RelativeLayout.HeightConstraint =
-                    "{ConstraintExpression Type=RelativeToParent,
-                                            Property=Height,
-                                            Factor=0.1,
-                                            Constant=0}" >
-                <Label 
-                    Text="Wachtwoord vergeten?"
-                    />
-            </RelativeLayout>
+                <Label Text="hier komt de checkbox voor blijf inlog"
+                       />
+                <Label Text="Wachtwoord vergeten?"
+                        />
+                <Label Text="Regristeren"
+                        />
+                
 
+            </StackLayout>
         </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
